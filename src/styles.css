@@ -7,7 +7,7 @@ body {
 }
 
 .site-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav {
@@ -26,6 +26,8 @@ body {
     list-style: none;
     display: flex;
     gap: 1rem;
+    /* this may not be the best place to put it the font-size */
+    font-size: 1.25rem; 
 }
 
 .nav a {
