@@ -40,8 +40,9 @@ body {
 
 .home-page {
     text-align: center;
-    display: flex;
 }
+
+
 
 .annoucement {
     border: 1px solid black;
