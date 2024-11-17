@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 
 function App() {
 
@@ -9,5 +8,17 @@ function App() {
     </>
   )
 }
+
+function Nav (){
+    return(
+      <>
+        <nav className = "nav">
+
+
+
+        </nav>
+      </> 
+    )
+} 
 
 export default App
