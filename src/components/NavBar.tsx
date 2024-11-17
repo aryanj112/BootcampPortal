@@ -4,7 +4,11 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <div>Nav</div>
+    <nav>
+      <a href="/" className = "site-title"> AppDev Educational Portal </a>
+
+
+    </nav>
   )
 }
 
