@@ -3,8 +3,11 @@
 }
 
 body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-family: 'Pacifico', cursive; Use Pacifico font, fallback to any cursive font */
     margin: 0;
-}
+    padding: 0;
+  }
 
 .site-title {
     font-size: 1.5rem;
@@ -35,3 +38,23 @@ body {
     text-decoration: none;
 }
 
+.home-page {
+    text-align: center;
+    display: flex;
+}
+
+.annoucement {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 1.5rem 6rem 1.25rem 6rem;
+    width: 20rem;
+}
+
+.annoucement img{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    width: 10rem;
+    height: auto;
+}
