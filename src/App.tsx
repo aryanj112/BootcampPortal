@@ -2,6 +2,9 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar';
+import Home from './pages/Home'
+import Calendar from './pages/Calendar'
+import Lectures from './pages/Lectures'
 
 function App() {
 
@@ -10,7 +13,9 @@ function App() {
       <NavBar />
       <div className = "container">
         <Routes>
-
+          <Route path = '/' element = {<Home />} />
+          <Route path = '/calendar' element = {<Calendar />} />
+          <Route path = '/Lectures' element = {<Lectures />} />
 
         </Routes>
       </div>
