@@ -1,14 +1,14 @@
 // @ts-ignore
-
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
     <nav className = 'nav'>
-      <a href="/" className = "site-title"> AppDev Educational Portal </a>
+      <Link to="/" className = "site-title"> AppDev Educational Portal </Link>
       <ul>
-        <li> <a href="/calendar"> Calendar </a> </li>
-        <li> <a href="/lectures"> Lectures </a> </li>
+        <li> <Link to="/calendar"> Calendar </Link> </li>
+        <li> <Link to="/lectures"> Lectures </Link> </li>
       </ul>
 
     </nav>
