@@ -1,9 +1,12 @@
+// @ts-ignore
+
+
 import React from 'react'
 
-function Nav() {
+function NavBar() {
   return (
     <div>Nav</div>
   )
 }
 
-export default Nav
+export default NavBar
