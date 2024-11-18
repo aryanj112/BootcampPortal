@@ -9,6 +9,9 @@ function NavBar() {
       <ul>
         <li> <Link to="/calendar"> Calendar </Link> </li>
         <li> <Link to="/lectures"> Lectures </Link> </li>
+        <li> <Link to="/homework"> Homework </Link> </li>
+        <li> <Link to="/attendence"> Attendence </Link> </li>
+        <li> <Link to="/group"> Group </Link> </li>
       </ul>
 
     </nav>
