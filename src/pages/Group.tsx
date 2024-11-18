@@ -1,3 +1,4 @@
+// @ts-ignore
 import React from 'react'
 import { profilesData } from '../data/profiles.ts'
 

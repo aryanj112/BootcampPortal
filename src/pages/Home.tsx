@@ -1,6 +1,6 @@
 // @ts-ignore
 import React from 'react'
-import { announcementsData } from   '../annoucements.ts'
+import { announcementsData } from   '../data/annoucements.ts'
 
 type HomeProps = {
   name: string;
@@ -20,7 +20,6 @@ function Home( {name}: HomeProps ) {
               imgUrl = {announcement.imgUrl}
             />
           ))
-
         }
     </div>
   )
@@ -36,7 +35,7 @@ type AnnounceProps = {
 function Announcement({author, tag, description, imgUrl}: AnnounceProps){
     return(
       <div className = "annoucement">
-        <img src={imgUrl} alt={"Image of " + author} />
+        <img className = "annoucement-img" src={imgUrl} alt={"Image of " + author} />
         <h3> {author + ' ' + tag}</h3>
         <h4> {description}</h4>
       </div>
