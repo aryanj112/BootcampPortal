@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    /* font-family: 'Pacifico', cursive; Use Pacifico font, fallback to any cursive font */
     margin: 0;
     padding: 0;
   }
@@ -56,4 +55,18 @@ body {
     border-radius: 5px;
     width: 10rem;
     height: auto;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    width: 60rem;
+}
+
+.lecture-slide {
+    width: 45rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    background-color:cornflowerblue;
 }

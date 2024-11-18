@@ -2,12 +2,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, EffectCoverflow } from 'swiper/modules';
-import 'swiper/swiper-bundle.min.css';
-
+import 'swiper/swiper-bundle.css';
 
 function Lectures() {
   return (
-    <div>
+    <div className = "slides">
       <Swiper
         modules={[Navigation, EffectCoverflow]} // Pass the modules here
         navigation={true} // Enable navigation arrows
@@ -25,13 +24,24 @@ function Lectures() {
         }}
       >
         <SwiperSlide>
-          <div style={{ height: '300px', background: '#f00' }}>Slide 1</div>
+          <div className = "lecture-slide">Slide 1</div>
         </SwiperSlide>
         
         <SwiperSlide>
-          <div style={{ height: '300px', background: '#0f0' }}>Slide 2</div>
+          <div className = "lecture-slide">Slide 2</div>
         </SwiperSlide>
 
+        <SwiperSlide>
+          <div className = "lecture-slide">Slide 3</div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className = "lecture-slide">Slide 4</div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className = "lecture-slide">Slide 5</div>
+        </SwiperSlide>
 
       </Swiper>
 
