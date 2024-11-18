@@ -1,10 +1,22 @@
 import React from 'react'
+import { profilesData } from '../data/profiles.ts'
 
 function Group() {
   return (
     <div className = "profiles">
-        
-
+        {
+            profilesData.map(profile => (
+                <Profile 
+                    name = {profile.name}
+                    status = {profile.status}
+                    imgURL = {profile.imgURL} 
+                    linkedinURL = {profile.linkedinURL} 
+                    gitHubURL = {profile.gitHubURL}
+                    websiteURL = {profile.websiteURL} 
+                    resumeURL = {profile.resumeURL}               
+                />
+            ))
+        }
     </div>
   )
 }
@@ -19,7 +31,7 @@ type ProfileProps = {
     resumeURL: string;
 };
 
-function Profile( {name, status, imgURL, linkedinURL, gitHubURL, websiteURL, resumeURL}: ProfileProps){
+function Profile({name, status, imgURL, linkedinURL, gitHubURL, websiteURL, resumeURL}: ProfileProps){
     return(
         <div>
             <img src= { imgURL } alt="" />
