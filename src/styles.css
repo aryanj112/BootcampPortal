@@ -49,10 +49,16 @@ body {
     width: 20rem;
 }
 
-.annoucement img{
+.annoucement img {
     border: 1px solid black;
     padding: 15px;
     border-radius: 5px;
     width: 10rem;
     height: auto;
+}
+
+.slide {
+    width: 30rem;
+    height: 30rem;
+    border: 2px solid black;
 }
