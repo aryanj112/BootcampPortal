@@ -56,17 +56,3 @@ body {
     width: 10rem;
     height: auto;
 }
-
-.slides {
-    display: flex;
-    justify-content: center;
-    width: 60rem;
-}
-
-.lecture-slide {
-    width: 45rem;
-    height: 25rem;
-    display: flex;
-    justify-content: center;
-    background-color:cornflowerblue;
-}
