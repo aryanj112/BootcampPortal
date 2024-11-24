@@ -16,17 +16,18 @@ body {
 
 .nav {
     margin: 2rem;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     background-color: hsl(231 83% 5%/50%);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding: 0 1rem;
+    padding-inline: 2rem;
 }
 
 .nav .logo img{
+    display: block;
+    margin: .75rem;
     width: 4rem;
 }
 
@@ -36,13 +37,26 @@ body {
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     font-size: 1.25rem; 
 }
 
+.nav ul li{
+    border-radius: .5rem;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    background: hsl(265, 80%, 70%, 20%);
+}
+
 .nav a {
-    color: hsl(265, 80%, 76%);
+    color: hsla(320, 74%, 85%, 0.6);
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav a:hover{
+    color: hsl(0, 0%, 95%);
+
 }
 
 .home-page {
@@ -69,4 +83,18 @@ body {
     width: 30rem;
     height: 30rem;
     border: 2px solid black;
+}
+
+@media screen and (max-width: 940px){
+    .nav {
+        flex-direction: column;
+        gap: .25rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
