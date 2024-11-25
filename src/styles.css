@@ -7,7 +7,8 @@ body {
     margin: 0;
     padding: 0;
     min-block-size: 100vb;
-    background-image: linear-gradient(to bottom right, hsl(320 87% 82%), hsl(265 85% 88%), hsl(231 83% 75%));
+    background-image: linear-gradient(to left bottom, hsl(226, 77%, 48%), hsl(224, 70%, 40%), hsl(223, 39%, 11%));
+    color: hsl(0, 0%, 100%);
 }
 
 .site-title {
@@ -21,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     padding-inline: 2rem;
 }
 
@@ -32,7 +33,7 @@ body {
 }
 
 .nav ul {
-    color: hsl(265, 80%, 76%);
+    color: hsl(224, 70%, 40%);
     padding: 0;
     margin: 0;
     list-style: none;
@@ -45,18 +46,17 @@ body {
     border-radius: .5rem;
     padding-inline: 1rem;
     padding-block: .5rem;
-    background: hsl(265, 80%, 70%, 20%);
+    background: hsl(223, 39%, 11%, 80%);
 }
 
 .nav a {
-    color: hsla(320, 74%, 85%, 0.6);
+    color: hsl(224, 65%, 53%);
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
 .nav a:hover{
     color: hsl(0, 0%, 95%);
-
 }
 
 .home-page {
