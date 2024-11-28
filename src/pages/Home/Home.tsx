@@ -1,6 +1,6 @@
 // @ts-ignore
 import React from 'react'
-import { announcementsData } from   '../data/annoucements.ts'
+import { announcementsData } from '../../data/announcements';
 
 type HomeProps = {
   name: string;
@@ -8,7 +8,7 @@ type HomeProps = {
 
 function Home( {name}: HomeProps ) {
   return (
-    <div className = "home-page">
+    <div className = "home-page">s
       <h1> {"Welcome " + name + "!"}</h1>
       <h2> Recent Announcements: </h2>
       <div className = "announcements-container">

@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <nav className={classes.nav}>
       <Link to="/" className={classes.logo}>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo"/>
       </Link>
       <ul>
         <li> <Link to="/calendar"> Calendar </Link> </li>

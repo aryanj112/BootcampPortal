@@ -1,6 +1,6 @@
 // @ts-ignore
 import React from 'react'
-import { profilesData } from '../data/profiles.ts'
+import { profilesData } from '../../data/profiles.ts'
 
 function Group() {
   return (
