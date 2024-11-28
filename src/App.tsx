@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home/Home'
 import Calendar from './pages/Calendar/Calendar'
 import Lectures from './pages/Lectures/Lectures'
-import Group from './pages/Group/Group';
+import Group from './pages/Group';
 import Attendence from './pages/Attendence/Attendence';
 import Homework from './pages/Homework/Homework';
 
