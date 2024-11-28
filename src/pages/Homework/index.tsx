@@ -1,5 +1,5 @@
 import React from 'react';
-import { homeworkData } from '../data/HomeworkData.ts';
+import { homeworkData } from '../../data/HomeworkData.ts';
 
 function Homework() {
   return (
