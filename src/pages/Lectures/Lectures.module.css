@@ -11,12 +11,18 @@
     padding: 1rem; /* Inner padding for Swiper */
     position: relative; /* Make sure the container allows positioning of children */
   }
-  
-  .swiperControlsWrapper{
+
+  .controlsWrapper {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    align-items: center;
+    gap: 10px; /* Space between buttons and pagination */
+    position: absolute; /* Positioning relative to Swiper */
+    bottom: 7rem; /* Position at the bottom (adjust as needed) */
+    left: 0;
+    right: 0;
+    flex-direction: row-reverse; /* Reverses the order of items */
+
   }
 
   .slide {
@@ -32,7 +38,8 @@
     width: 40rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
-  
+
+
   .swiperPagination {
     text-align: center;
     padding: 10px 0;

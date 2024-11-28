@@ -35,11 +35,11 @@ function Lectures() {
       {/* Controls Wrapper (with Navigation Buttons and Pagination) */}
       <div className={classes.controlsWrapper}>
         {/* Previous Button */}
-        <div className={`swiper-button-prev ${classes.swiperButtonPrev} `} />
+        <div className={`${classes.swiperButtonPrev} swiper-button-prev `} />
         {/* Pagination */}
         <div className={classes.swiperPagination}></div>
         {/* Next Button */}
-        <div className={`swiper-button-next ${classes.swiperButtonNext}`} />
+        <div className={`${classes.swiperButtonNext} swiper-button-next`} />
       </div>
     </div>
   );
