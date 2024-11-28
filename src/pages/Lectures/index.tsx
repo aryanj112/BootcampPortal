@@ -13,10 +13,16 @@ function Lectures() {
       <Swiper
         className={classes.swiperContainer}
         modules={[Navigation, Pagination, A11y]}
-        spaceBetween={20}
-        slidesPerView={2.5}
-        navigation
-        pagination={{ clickable: true }}
+        spaceBetween={0}
+        slidesPerView={0}
+        navigation={{
+          prevEl: `.${classes.swiperButtonPrev}`,
+          nextEl: `.${classes.swiperButtonNext}`,
+        }}
+        pagination={{ 
+          el: `.${classes.swiperPagination}`, 
+          clickable: true 
+        }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
@@ -24,12 +30,19 @@ function Lectures() {
         <SwiperSlide className={classes.slide}>Slide 2</SwiperSlide>
         <SwiperSlide className={classes.slide}>Slide 3</SwiperSlide>
         <SwiperSlide className={classes.slide}>Slide 4</SwiperSlide>
-      
       </Swiper>
 
+      {/* Controls Wrapper (with Navigation Buttons and Pagination) */}
+      <div className={classes.controlsWrapper}>
+        {/* Previous Button */}
+        <div className={`swiper-button-prev ${classes.swiperButtonPrev} `} />
+        {/* Pagination */}
+        <div className={classes.swiperPagination}></div>
+        {/* Next Button */}
+        <div className={`swiper-button-next ${classes.swiperButtonNext}`} />
+      </div>
     </div>
-
-  )
+  );
 }
 
-export default Lectures
+export default Lectures;

@@ -1,6 +1,49 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem; /* Space around the entire Swiper */
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .swiperContainer {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit maximum width */
+    padding: 1rem; /* Inner padding for Swiper */
+    position: relative; /* Make sure the container allows positioning of children */
+  }
+  
+  .swiperControlsWrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .slide {
+    margin: 1rem; /* Space between slides */
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 0.5rem; /* Rounded corners */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-size: 1.2rem; /* Text size */
+    font-weight: bold; /* Bold text */
+    height: 22rem; /* Fixed height for slides */
+    width: 40rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .swiperPagination {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #007bff; /* Blue color for the dots */
+    opacity: 0.7;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #0056b3; /* Darker blue for active dot */
+    opacity: 1;
+  }
