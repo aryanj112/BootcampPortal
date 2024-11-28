@@ -1,5 +1,6 @@
 // @ts-ignore
 import React from 'react';
+import classes from './Profile.module.css';
 
 type ProfileProps = {
   name: string;
@@ -13,17 +14,17 @@ type ProfileProps = {
 
 function Profile({ name, status, imgURL, linkedinURL, gitHubURL, websiteURL, resumeURL}: ProfileProps) {
   return (
-    <div>
-      <img src={imgURL} alt={name} />
-      <h2>
+    <div className={classes.profile}>
+      <img className={classes.profileImage} src={imgURL} alt={name} />
+      <h2 className={classes.name}>
         {name} <h4>{status}</h4>
       </h2>
-      <ul className="group-links">
+      <ul className={classes.links}>
         <li>{'Linkedin Link: ' + linkedinURL}</li>
         <li>{'GitHub Link: ' + gitHubURL}</li>
         <li>{'Website Link: ' + websiteURL}</li>
       </ul>
-      <iframe src={resumeURL} width="600" height="500" />
+      <iframe className={classes.resume} src={resumeURL} width="600" height="500" />
     </div>
   );
 }

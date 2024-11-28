@@ -1,5 +1,3 @@
-// src/pages/group/Group.tsx
-
 // @ts-ignore
 import React from 'react';
 import { profilesData } from '../../data/profiles';
@@ -10,7 +8,7 @@ function Group() {
     <div className="profiles">
       {profilesData.map((profile) => (
         <Profile
-          key={profile.name} // Added key prop for better performance with list items
+          key={profile.id}
           name={profile.name}
           status={profile.status}
           imgURL={profile.imgURL}
