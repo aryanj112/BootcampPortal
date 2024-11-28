@@ -8,7 +8,7 @@ type HomeProps = {
 
 function Home( {name}: HomeProps ) {
   return (
-    <div className = "home-page">s
+    <div className = "home-page">
       <h1> {"Welcome " + name + "!"}</h1>
       <h2> Recent Announcements: </h2>
       <div className = "announcements-container">

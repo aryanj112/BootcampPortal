@@ -1,13 +1,13 @@
 // @ts-ignore
-import React, { useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Home from './pages/Home/Home'
-import Calendar from './pages/Calendar/Calendar'
-import Lectures from './pages/Lectures/Lectures'
+import Home from './pages/Home';
+import Calendar from './pages/Calendar';
+import Lectures from './pages/Lectures';
 import Group from './pages/Group';
-import Attendence from './pages/Attendence/Attendence';
-import Homework from './pages/Homework/Homework';
+import Attendence from './pages/Attendence';
+import Homework from './pages/Homework';
 
 function App() {
 
