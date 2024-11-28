@@ -1,56 +1,144 @@
+/* Resetting basic styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/* Root variables for easy theme management */
+:root {
+  --primary: #6a59ff;
+  --secondary: #007bff;
+  --active: #0056b3;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+
+/* Basic styling for the body */
+body {
+  font-size: 1.6rem;
+  background: var(--bg);
+}
+
+/* Container for centering content */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Swiper container styles */
+.swiperContainer {
+  width: 100%;
+  max-width: 1200px; /* Limit maximum width */
+  padding: 1rem;
+  position: relative; /* Allow positioning of child elements */
+}
+
+/* Controls wrapper for pagination and navigation buttons */
+.controlsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between buttons and pagination */
+  position: absolute;
+  bottom: 7rem; /* Position at the bottom */
+  left: 0;
+  right: 0;
+  flex-direction: row-reverse; /* Reverses the order of items */
+}
+
+/* Styling for individual slides */
+.slide {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 22rem;
+  width: 40rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Swiper pagination styling */
+.swiperPagination {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Pagination bullet default and active styles */
+.swiper-pagination-bullet {
+  background: var(--secondary); /* Blue color for the dots */
+  opacity: 0.7;
+  transition: background 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--active); /* Darker blue for active dot */
+  opacity: 1;
+}
+
+/* Styling for the navigation buttons (next/prev) */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 24px rgba(18, 28, 53, 0.1);
+  font-size: 1.5rem;
+  color: var(--secondary);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure buttons are above the slides */
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: -2rem;
+}
+
+.swiper-button-next {
+  right: -2rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 500px) {
   .swiperContainer {
-    width: 100%; /* Full width */
-    max-width: 1200px; /* Limit maximum width */
-    padding: 1rem; /* Inner padding for Swiper */
-    position: relative; /* Make sure the container allows positioning of children */
+    height: 47rem;
   }
 
-  .controlsWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* Space between buttons and pagination */
-    position: absolute; /* Positioning relative to Swiper */
-    bottom: 7rem; /* Position at the bottom (adjust as needed) */
-    left: 0;
-    right: 0;
-    flex-direction: row-reverse; /* Reverses the order of items */
-
+  .swiper-slide {
+    width: 28rem !important;
+    height: 36rem !important;
   }
 
-  .slide {
-    margin: 1rem; /* Space between slides */
-    background-color: #f0f0f0; /* Light gray background */
-    border-radius: 0.5rem; /* Rounded corners */
-    display: flex; /* Center content */
-    align-items: center; /* Vertical centering */
-    justify-content: center; /* Horizontal centering */
-    font-size: 1.2rem; /* Text size */
-    font-weight: bold; /* Bold text */
-    height: 22rem; /* Fixed height for slides */
-    width: 40rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  .swiper-slide img {
+    width: 28rem !important;
+    height: 36rem !important;
   }
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 
-  .swiperPagination {
-    text-align: center;
-    padding: 10px 0;
+@media (max-width: 990px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 3.2rem;
+    height: 3.2rem;
   }
-  
-  .swiper-pagination-bullet {
-    background: #007bff; /* Blue color for the dots */
-    opacity: 0.7;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background: #0056b3; /* Darker blue for active dot */
-    opacity: 1;
-  }
+}
