@@ -1,6 +1,6 @@
 // @ts-ignore
 import React from 'react'
-import { announcementsData } from   '../data/annoucements.ts'
+import { announcementsData } from '../../data/announcements';
 
 type HomeProps = {
   name: string;
