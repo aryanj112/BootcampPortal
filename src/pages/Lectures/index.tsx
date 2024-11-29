@@ -1,46 +1,54 @@
-// @ts-ignore
 import React from 'react';
 // Swiper Imports
-import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Navigation, A11y, EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
+
 // CSS Imports
-import classes from './Lectures.module.css';
+import './Lectures.css';
 
 function Lectures() {
+
   return (
-    <div className={classes.container}>
+    <div className='container'>
+      <h1>Lectures</h1>
       <Swiper
-        className={classes.swiperContainer}
-        modules={[Navigation, Pagination, A11y]}
-        spaceBetween={0}
-        slidesPerView={0}
+        className="swiper_container"
+        effect={'coverflow'}
+        grabCursor={true}
+        loop={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        }}
         navigation={{
-          prevEl: `.${classes.swiperButtonPrev}`,
-          nextEl: `.${classes.swiperButtonNext}`,
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         }}
-        pagination={{ 
-          el: `.${classes.swiperPagination}`, 
-          clickable: true 
-        }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+        modules={[EffectCoverflow, Navigation, A11y]}
+        onSlideChange={() => console.log('Slide changed')}
       >
-        <SwiperSlide className={classes.slide}>Slide 1</SwiperSlide>
-        <SwiperSlide className={classes.slide}>Slide 2</SwiperSlide>
-        <SwiperSlide className={classes.slide}>Slide 3</SwiperSlide>
-        <SwiperSlide className={classes.slide}>Slide 4</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 1</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 2</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 3</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 4</SwiperSlide>
+
+        <SwiperSlide className='slide'>Slide 3</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 4</SwiperSlide>
+
+        <SwiperSlide className='slide'>Slide 3</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 4</SwiperSlide>
+
+      <div className="slider-controler">
+        <div className="swiper-button-prev slider-arrow"/>
+        <div className="swiper-button-next slider-arrow"/>
+      </div>
+
       </Swiper>
 
-      {/* Controls Wrapper (with Navigation Buttons and Pagination) */}
-      <div className={classes.controlsWrapper}>
-        {/* Previous Button */}
-        <div className={`${classes.swiperButtonPrev} swiper-button-prev `} />
-        {/* Pagination */}
-        <div className={classes.swiperPagination}></div>
-        {/* Next Button */}
-        <div className={`${classes.swiperButtonNext} swiper-button-next`} />
-      </div>
     </div>
   );
 }
