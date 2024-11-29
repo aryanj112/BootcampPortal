@@ -9,7 +9,8 @@ export const homeworkData = [
         "your own (they are for your own good).\n\n" +  "Our second set of homework this week is another JavaScript game. I have the code " + 
         "for it in the GitHub Repository button. It should look like the photo when you’re all done. Please do not clone the repository, " + 
         "just download the files or copy and paste them into your editor and then make your own GitHub repository and you will submit the link.",
-        githubLink: "", submissionPortal: "https://forms.gle/SikXYsLiDJnQCgr28", dueDate: "10/34/24", images: ["src/assets/hw1_img1.png"] },
+        githubLink: "https://github.com/KiberVG/MemoryMatchingBootcampHW", submissionPortal: "https://forms.gle/SikXYsLiDJnQCgr28", 
+        dueDate: "10/34/24", images: ["src/assets/hw1_img1.png"] },
     
     { id: 2, name: "Flash Card App", description: "For our homework, we are creating a flashcard app! When you click the card, " + 
         "it should show the definition. You can also go to the next card or previous card. If you keep pressing next, it should " + 
