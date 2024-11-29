@@ -5,9 +5,9 @@
     background-color: hsl(231 83% 5%/50%);
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 1.5rem;
     padding-inline: 2rem;
+    flex-direction: column-reverse;
 }
 
 .nav .logo img{
