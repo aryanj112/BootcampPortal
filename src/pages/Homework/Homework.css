@@ -1,0 +1,97 @@
+.homework-card {
+    background: #f9f9f9;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.homework-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.homework-description {
+    flex: 0 0 50%;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.homework-text {
+    flex: 0 0 20%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.homework-images {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 100%;
+    min-height: 150px;
+}
+
+.homework-images img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    min-height: 150px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.homework-card h2 {
+    color: blue; 
+    white-space: normal;
+}
+
+  .homework-card p {
+    color: green;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.homework-description p {
+    max-width: 600px; 
+    white-space: normal;
+    word-wrap: break-word;
+    color: black
+}
+
+.homework-link {
+    color: red;
+}
+
+.homework-images a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.homework-images img:hover {
+    transform: scale(1.05);
+}
+
+.homework-list-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.homework-heading{
+    padding-left: 20px;
+}
