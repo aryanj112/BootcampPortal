@@ -89,7 +89,7 @@ h1 {
 .slider-arrow:hover {
   transform: scale(1.2);
 }
-
+ 
 @media (max-width: 990px) {
     .swiper-button-next {
       left: 70% !important;
@@ -115,5 +115,5 @@ h1 {
     .swiper-button-prev {
       left: 20% !important;
       transform: translateX(-20%) !important;
-    }
+    } 
 }

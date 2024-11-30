@@ -44,11 +44,7 @@ function Lectures() {
       <div className="swiper-button-prev slider-arrow"/>
       <div className="swiper-button-next slider-arrow"/>
 
-      {/* <div className="slider-controler">
-      </div> */}
-
       </Swiper>
-
     </div>
   );
 }
