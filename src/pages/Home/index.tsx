@@ -38,8 +38,10 @@ function Announcement({author, tag, description, imgUrl}: AnnounceProps){
     return(
       <div className = "annoucement">
         <img className = "annoucement-img" src={imgUrl} alt={"Image of " + author} />
-        <h3> {author + ' ' + tag}</h3>
+        <div className = "announcement-text">
+        <h3 className = "announcement-author"> {author + ' ' + tag}</h3>
         <h4> {description}</h4>
+        </div>
       </div>
     )
 }

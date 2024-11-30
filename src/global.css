@@ -15,11 +15,10 @@ body {
 }
 
 .home-page {
-    position: relative;
-    width: 70%;
-    padding-left: 30%;
-    align-content: center;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .announcements-container {
@@ -36,17 +35,25 @@ body {
     border-radius: 5px;
     margin: 1.5rem 6rem 1.25rem 6rem;
     background-color: #888cfc;
+    flex-direction: row;
     display: flex;
-    align-items: center;
+    align-items: space-between;
 
 }
 
 .annoucement img {
     display: flex;
     border-radius: 5px;
-    width: 10rem;
+    width: 8rem;
     height: auto;
-    align-self: flex-start;
+    
+}
+
+.announcement-text{
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 .slide {
@@ -54,8 +61,8 @@ body {
     height: 30rem;
     border: 2px solid black;
 }
-
-@media screen and (max-width: 940px){
+/* 
+@media screen and (max-width: 940px){ 
     .nav {
         flex-direction: column;
         gap: .25rem;
@@ -67,7 +74,7 @@ body {
         justify-content: center;
     }
 
-}
+} */
 
 .homework-card {
     background: #f9f9f9;
