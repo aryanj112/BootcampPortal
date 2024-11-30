@@ -1,3 +1,4 @@
+// @ts-ignore
 import React from 'react';
 // Swiper Imports
 import { Navigation, A11y, EffectCoverflow } from 'swiper/modules';
@@ -35,17 +36,16 @@ function Lectures() {
         <SwiperSlide className='slide'>Slide 2</SwiperSlide>
         <SwiperSlide className='slide'>Slide 3</SwiperSlide>
         <SwiperSlide className='slide'>Slide 4</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 5</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 6</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 7</SwiperSlide>
+        <SwiperSlide className='slide'>Slide 8</SwiperSlide>
 
-        <SwiperSlide className='slide'>Slide 3</SwiperSlide>
-        <SwiperSlide className='slide'>Slide 4</SwiperSlide>
+      <div className="swiper-button-prev slider-arrow"/>
+      <div className="swiper-button-next slider-arrow"/>
 
-        <SwiperSlide className='slide'>Slide 3</SwiperSlide>
-        <SwiperSlide className='slide'>Slide 4</SwiperSlide>
-
-      <div className="slider-controler">
-        <div className="swiper-button-prev slider-arrow"/>
-        <div className="swiper-button-next slider-arrow"/>
-      </div>
+      {/* <div className="slider-controler">
+      </div> */}
 
       </Swiper>
 
