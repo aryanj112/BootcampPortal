@@ -3,9 +3,8 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
+    min-width: 300px;
+    font-family: Georgia, serif;
     min-block-size: 100vb;
     background-image: linear-gradient(to left bottom, hsl(226, 77%, 48%), hsl(224, 70%, 40%), hsl(223, 39%, 11%));
     color: hsl(0, 0%, 100%);
@@ -16,27 +15,38 @@ body {
 }
 
 .home-page {
+    position: relative;
+    width: 70%;
+    padding-left: 30%;
+    align-content: center;
     text-align: center;
 }
 
 .announcements-container {
     display: flex;
+    align-self: center;
+    flex-direction: column;
     justify-content: center;
+    width: 800px;
 }
 
 .annoucement {
-    border: 1px solid black;
-    padding: 15px;
+    border: 4px solid black;
+    padding: 5px;
     border-radius: 5px;
     margin: 1.5rem 6rem 1.25rem 6rem;
-    width: 20rem;
+    background-color: #888cfc;
+    display: flex;
+    align-items: center;
+
 }
 
 .annoucement img {
-    border: 1px solid black;
+    display: flex;
     border-radius: 5px;
     width: 10rem;
     height: auto;
+    align-self: flex-start;
 }
 
 .slide {
