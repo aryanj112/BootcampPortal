@@ -1,0 +1,24 @@
+
+.home-page {
+    text-align: center;
+}
+
+.announcements-container {
+    display: flex;
+    justify-content: center;
+}
+
+.annoucement {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 1.5rem 6rem 1.25rem 6rem;
+    width: 20rem;
+}
+
+.annoucement img {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 10rem;
+    height: auto;
+}
