@@ -1,6 +1,6 @@
 import React from 'react';
 import { homeworkData } from '../../data/HomeworkData.ts';
-import './Homework.css';
+import './homeworkStyling.css';
 
 function Homework() {
   return (

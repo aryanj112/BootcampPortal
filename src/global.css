@@ -20,3 +20,16 @@ body {
     height: 30rem;
     border: 2px solid black;
 }
+
+@media screen and (max-width: 940px){
+    .nav {
+        flex-direction: column;
+        gap: .25rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
