@@ -2,14 +2,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/logo.png";
-import classes from './NavBar.module.css';
+import './NavBar.css';
+
 
 // className={`${classes.nav} ${classes.active}`} is how you would add multiple classes
 
 function NavBar() {
   return (
-    <nav className={classes.nav}>
-      <Link to="/" className={classes.logo}>
+    <nav className="nav">
+      <Link to="/" className="logo">
         <img src={logo} alt="logo"/>
       </Link>
       <ul>

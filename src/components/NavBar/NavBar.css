@@ -43,3 +43,16 @@
 .nav a:hover{
     color: hsl(0, 0%, 95%);
 }
+
+@media screen and (max-width: 940px){
+    .nav {
+        flex-direction: column;
+        gap: .25rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

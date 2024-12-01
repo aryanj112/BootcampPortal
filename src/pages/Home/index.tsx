@@ -1,6 +1,7 @@
 // @ts-ignore
 import React from 'react'
 import { announcementsData } from '../../data/announcements';
+import './Home.css';
 
 type HomeProps = {
   name: string;
