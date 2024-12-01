@@ -11,9 +11,9 @@ function Group() {
       <div className="group-heading">
         <h1>Group Profiles</h1>
       </div>
-      <h2 className="section-heading">Mentors</h2>
+      <h1 className="section-heading">Mentors</h1>
       <ProfileList profiles={mentors} />
-      <h2 className="section-heading">Teammates</h2>
+      <h1 className="section-heading">Teammates</h1>
       <ProfileList profiles={students} />
     </>
   );

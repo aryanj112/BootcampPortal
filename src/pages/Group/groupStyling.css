@@ -1,5 +1,10 @@
 .group-heading, .section-heading {
-    padding-left: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.group-heading{
+    font-size: 30px;
 }
 
 .profile-list-container {
@@ -15,8 +20,8 @@
 .profile-card {
     background: #f9f9f9;
     padding: 16px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -83,7 +88,7 @@
 .profile-name {
     margin-top: 12px;
     color: blue;
-    white-space: nowrap;
+    width: 150px;
 }
 
 .contacts-heading {
