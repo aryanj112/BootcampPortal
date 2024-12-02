@@ -1,24 +1,119 @@
-
-.home-page {
-    text-align: center;
-}
-
-.announcements-container {
+* {
+    box-sizing: border-box;
+ }
+ 
+ 
+ body {
+    min-width: 300px;
+    min-block-size: 100vb;
+    /* background-image: linear-gradient(to left bottom, hsl(226, 77%, 48%), hsl(224, 70%, 40%), hsl(223, 39%, 11%)); */
+    background-color: #03072E;
+    color: white;
+ }
+ 
+ 
+ .site-title {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 150;
+    font-size: 5.5rem;
+    color: white;
+ }
+ 
+ 
+ .site-subtitle{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 2rem;
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+ }
+ 
+ 
+ .home-page {
     display: flex;
-    justify-content: center;
-}
-
-.annoucement {
-    border: 1px solid black;
-    padding: 15px;
+    text-align: center;
+    flex-direction: column;
+ }
+ 
+ 
+ .announcements-container {
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    border: 1px #03072E;
+ }
+ 
+ 
+ .annoucement {
+    font-family: "Varta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    padding: 2rem;
     border-radius: 5px;
+    width: 50rem;
     margin: 1.5rem 6rem 1.25rem 6rem;
-    width: 20rem;
-}
-
-.annoucement img {
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 10rem;
+    background-color: white;
+    display:flex;
+    justify-content: column;
+    color: #03072E;
+    /* border: 3px solid #2F1847;  */
+ 
+ 
+ }
+ 
+ 
+ .annoucement img {
+    display: flex;
+    /* border-radius: 5px; */
+    border: 0.2rem solid #03072E;
+    width: 8rem;
     height: auto;
-}
+   
+ }
+ 
+ 
+ .announcement-header{
+    color: #2F1847;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+   
+ }
+ 
+ 
+ .announcement-header h3{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+ }
+ .announcements-container h4{
+    padding-top: 4rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+ }
+ .slide {
+    width: 30rem;
+    height: 30rem;
+    border: 2px solid white;
+ }
+ /*
+ @media screen and (max-width: 940px){
+    .nav {
+        flex-direction: column;
+        gap: .25rem;
+        padding-bottom: 1rem;
+    }
+ 
+ 
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
+ 
+ } */
+ 
