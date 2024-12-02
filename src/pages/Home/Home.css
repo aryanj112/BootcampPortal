@@ -7,7 +7,7 @@
     min-width: 300px;
     min-block-size: 100vb;
     /* background-image: linear-gradient(to left bottom, hsl(226, 77%, 48%), hsl(224, 70%, 40%), hsl(223, 39%, 11%)); */
-    background-color: #03072E;
+    background-color: #35579a;
     color: white;
  }
  
@@ -44,23 +44,22 @@
     display: flex;
     flex-direction: column;
     align-self:center;
-    border: 1px #03072E;
+    border: 1px #35579a;
  }
  
  
  .annoucement {
     font-family: "Varta", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-style: normal;
     padding: 2rem;
     border-radius: 5px;
-    width: 50rem;
+    width: 40rem;
     margin: 1.5rem 6rem 1.25rem 6rem;
     background-color: white;
     display:flex;
     justify-content: column;
-    color: #03072E;
+    color: #35579a;
     /* border: 3px solid #2F1847;  */
  
  
@@ -70,7 +69,7 @@
  .annoucement img {
     display: flex;
     /* border-radius: 5px; */
-    border: 0.2rem solid #03072E;
+    border: 0.2rem solid black;
     width: 8rem;
     height: auto;
    
@@ -78,7 +77,7 @@
  
  
  .announcement-header{
-    color: #2F1847;
+    color: #35579a;
     display:flex;
     flex-direction: column;
     justify-content:flex-start;
