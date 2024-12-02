@@ -8,10 +8,11 @@
     bottom:0;
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     color: #35579a;
     width:100%;
-    padding: 2rem;
+    height:auto;
+   /* / padding: 2rem; */
 }
 
 .footer h3{
