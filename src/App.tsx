@@ -25,7 +25,7 @@ function App() {
           <Route path = '/group' element = {<Group />} />
         </Routes>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
