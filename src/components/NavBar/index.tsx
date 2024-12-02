@@ -16,10 +16,10 @@ function NavBar() {
         <img src={logo} alt="logo"/>
       </Link>
       <ul>
-        <li> <Link to="/lectures"> Lectures </Link> </li>
-        <li> <Link to="/homework"> Homework </Link> </li>
-        <li> <Link to="/attendence"> Attendence </Link> </li>
-        <li> <Link to="/group"> Group </Link> </li>
+        <li> <Link to="/lectures"> LECTURES </Link> </li>
+        <li> <Link to="/homework"> HOMEWORK </Link> </li>
+        <li> <Link to="/attendence"> ATTENDANCE </Link> </li>
+        <li> <Link to="/group"> GROUP </Link> </li>
       </ul>
       <button onClick = {handleLoginClick} className = "login-button"> Login </button>
       {isModelOpen && <LoginModel onClose = {handleCloseModel}/>}

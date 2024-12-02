@@ -1,4 +1,76 @@
-
+.nav {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 2rem;
+    border-radius: .5rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding-inline: 2rem;
+    padding:1.5rem;
+    position:sticky;
+    top:0;
+ }
+ 
+ 
+ .nav .logo img{
+    display: block;
+    margin: .75rem;
+    width: 4rem;
+ 
+ 
+ }
+ 
+ 
+ .nav ul {
+    /* color: hsl(224, 70%, 40%); */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.75rem;
+ }
+ 
+ 
+ .nav ul li{
+    border-radius: .5rem;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    /* background: hsl(223, 39%, 11%, 80%); */
+ }
+ 
+ 
+ .nav a {
+    color: #35579a;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+ }
+ 
+ 
+ .nav a:hover{
+    text-decoration: underline;
+ }
+ 
+ 
+ @media screen and (max-width: 940px){
+    .nav {
+        flex-direction: column;
+        gap: .25rem;
+        padding-bottom: 1rem;
+    }
+ 
+ 
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ }
+ 
+/* 
 .nav {
     margin: 2rem;
     border-radius: .5rem;
@@ -63,4 +135,4 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+} */
