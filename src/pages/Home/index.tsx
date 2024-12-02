@@ -2,15 +2,16 @@
 import React from 'react'
 import { announcementsData } from '../../data/announcements';
 import './Home.css';
+import { getGlobalName } from '../../globalState';  // Import functions from the global state
+import { useGlobalName } from '../../globalContext';
 
-type HomeProps = {
-  name: string;
-};
+function Home() {
+  
+  const { globalName } = useGlobalName();  // Get the global name
 
-function Home( {name}: HomeProps ) {
   return (
     <div className = "home-page">
-      <h1> {"Welcome " + name + "!"}</h1>
+      <h1> Welcome {globalName ? globalName : 'Guest'} !</h1>
       <h2> Recent Announcements: </h2>
       <div className = "announcements-container">
         {
