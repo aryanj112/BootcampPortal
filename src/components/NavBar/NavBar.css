@@ -44,6 +44,14 @@
     color: hsl(0, 0%, 95%);
 }
 
+.login-button {
+    background-color: hsl(224, 65%, 53%);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
 @media screen and (max-width: 940px){
     .nav {
         flex-direction: column;
