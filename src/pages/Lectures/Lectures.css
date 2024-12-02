@@ -117,3 +117,8 @@ h1 {
       transform: translateX(-20%) !important;
     } 
 }
+
+.footerAddition {
+  display: flexbox;
+  justify-content: space-between;
+}

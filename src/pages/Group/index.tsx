@@ -1,7 +1,7 @@
 import React from 'react';
 import { profilesData } from '../../data/profiles.ts';
 import './groupStyling.css';
-import "../../components/Footer/Footer.css";
+import "../../components/NavBar/footer.css";
 
 function Group() {
   const mentors = profilesData.filter(profile => profile.status === 'Mentor');
