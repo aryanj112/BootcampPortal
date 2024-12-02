@@ -14,11 +14,11 @@ function NavBar() {
         <img src={logo} alt="logo"/>
       </Link>
       <ul>
-        <li> <Link to="/calendar"> Calendar </Link> </li>
-        <li> <Link to="/lectures"> Lectures </Link> </li>
-        <li> <Link to="/homework"> Homework </Link> </li>
-        <li> <Link to="/attendence"> Attendence </Link> </li>
-        <li> <Link to="/group"> Group </Link> </li>
+        <li> <Link to="/calendar"> CALENDAR </Link> </li>
+        <li> <Link to="/lectures"> LECTURES </Link> </li>
+        <li> <Link to="/homework"> HOMEWORK </Link> </li>
+        <li> <Link to="/attendence"> ATTENDANCE </Link> </li>
+        <li> <Link to="/group"> GROUP </Link> </li>
       </ul>
     </nav>
   )
