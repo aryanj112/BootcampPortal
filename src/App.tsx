@@ -7,21 +7,25 @@ import Lectures from './pages/Lectures';
 import Group from './pages/Group';
 import Attendence from './pages/Attendence';
 import Homework from './pages/Homework';
+import { GlobalNameProvider } from './globalContext';  // Import the provider
+
 
 function App() {
 
   return (
     <>
+      <GlobalNameProvider>
       <NavBar />
       <div className = "container">
         <Routes>
-          <Route path = '/' element = {<Home name = "Aryan" />} />
+          <Route path = '/' element = {<Home />} />
           <Route path = '/lectures' element = {<Lectures />} />
           <Route path = '/homework' element = {<Homework />} />
           <Route path = '/attendence' element = {<Attendence />} />
           <Route path = '/group' element = {<Group />} />
         </Routes>
       </div>
+      </GlobalNameProvider>
     </>
   )
 }

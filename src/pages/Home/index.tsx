@@ -2,16 +2,15 @@
 import React from 'react'
 import { announcementsData } from '../../data/announcements';
 import './Home.css';
+import { useGlobalName } from '../../globalContext';
 
-type HomeProps = {
-  name: string;
-};
+function Home() {
+  const { globalName } = useGlobalName();  // Get the global name
 
-function Home( {name}: HomeProps ) {
   return (
     <div className="footerAddition">
       <div className = "home-page">
-        <h1 className = "site-title"> {"WELCOME, " + name + "!"}</h1>
+        <h1 className = "site-title"> Welcome {globalName ? globalName : 'Guest'} !</h1>
         <h2 className = "site-subtitle"> RECENT ANNOUNCEMENTS: </h2>
         <div className = "announcements-container">
           {
