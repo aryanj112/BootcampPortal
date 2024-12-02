@@ -10,6 +10,7 @@ function Homework() {
           <h1>HOMEWORK ASSIGNMENTS</h1>
         </div>
         <HomeworkList />
+        <br /><br />
         <div className="footer">
           <div className="footer-section">
           <h2>CONTACT INFORMATION</h2>

@@ -47,6 +47,7 @@ function Lectures() {
 
         </Swiper>
       </div>
+      <br /><br /><br /><br /><br /><br /><br />
       <div className="footer">
           <div className="footer-section">
           <h2>CONTACT INFORMATION</h2>

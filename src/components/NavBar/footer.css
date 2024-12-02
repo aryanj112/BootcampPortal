@@ -13,6 +13,11 @@
     width:100%;
     height:auto;
    /* / padding: 2rem; */
+   padding-left: 10rem;
+   padding-right: 10rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   
 }
 
 .footer h3{
