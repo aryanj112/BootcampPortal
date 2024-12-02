@@ -2,7 +2,6 @@
     align-items: center;
     font-family: "Varta", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     background: #f9f9f9;
     padding: 20px;
@@ -16,9 +15,9 @@
  }
  
  
- .homework-card:hover{
+ /* .homework-card:hover{
     transform: scale(1.25);
- }
+ } */
  
  
  .homework-content {
@@ -118,9 +117,9 @@
  
  
  .homework-heading{
-    font-family: "Urbanist", sans-serif;
-    font-optical-sizing: auto;
+   font-family: "Urbanist", sans-serif;
     font-style: normal;
+    font-weight: 50;
     font-size: 3rem;
     padding: 30px;
  }

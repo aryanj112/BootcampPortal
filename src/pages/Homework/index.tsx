@@ -6,7 +6,7 @@ function Homework() {
   return (
     <>
       <div className="homework-heading">
-        <h1>Homework Assignments</h1>
+        <h1>HOMEWORK ASSIGNMENTS</h1>
       </div>
       <HomeworkList />
     </>

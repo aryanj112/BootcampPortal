@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Calendar from './pages/Calendar';
 import Lectures from './pages/Lectures';
@@ -24,6 +25,7 @@ function App() {
           <Route path = '/group' element = {<Group />} />
         </Routes>
       </div>
+      <Footer />
     </>
   )
 }
