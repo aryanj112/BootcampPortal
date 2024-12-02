@@ -8,13 +8,27 @@ function Group() {
 
   return (
     <>
-      <div className="group-heading">
-        <h1>Group Profiles</h1>
-      </div>
-      <h1 className="section-heading">Mentors</h1>
-      <ProfileList profiles={mentors} />
-      <h1 className="section-heading">Teammates</h1>
-      <ProfileList profiles={students} />
+      <div className="footerAddition">
+        <div className="group-heading">
+          <h1>Group Profiles</h1>
+        </div>
+        <h1 className="section-heading">Mentors</h1>
+        <ProfileList profiles={mentors} />
+        <h1 className="section-heading">Teammates</h1>
+        <ProfileList profiles={students} />
+        <div className="footer">
+          <div className="footer-section">
+          <h2>CONTACT INFORMATION</h2>
+          <h3>KIMBER: martinezkimber03@gmail.com</h3>
+          <h3>EVELYN: ejiang2@terpmail.umd.edu</h3>
+          </div>
+          <div className="footer-section">
+          <h2>CLASS DETAILS</h2>
+          <h3>TIME: Tues 7:00 - 8:00 PM</h3>
+          <h3>LOCATION: CSI 1121</h3>
+          </div>
+        </div>
+      </div>  
     </>
   );
 }

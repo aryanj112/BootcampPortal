@@ -1,0 +1,38 @@
+
+.footer {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 10;
+    background-color: white;
+    bottom:0;
+    display: flex;
+    justify-content: space-between;
+    /* position: sticky; */
+    color: #35579a;
+    width:100%;
+    height:auto;
+   /* / padding: 2rem; */
+}
+
+.footer h3{
+    font-size: 2rem;
+}
+ .footer h2{
+    font-size: 3rem;
+ }
+
+.footer h4{
+    font-size: 1rem;
+}
+
+.footer-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footerAddition{
+    display: flex;
+    flex-direction: column;
+}
