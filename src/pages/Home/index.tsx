@@ -2,7 +2,6 @@
 import React from 'react'
 import { announcementsData } from '../../data/announcements';
 import './Home.css';
-import { getGlobalName } from '../../globalState';  // Import functions from the global state
 import { useGlobalName } from '../../globalContext';
 
 function Home() {
