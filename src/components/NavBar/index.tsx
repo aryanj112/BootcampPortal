@@ -19,6 +19,7 @@ function NavBar() {
         <li> <Link to="/attendence"> Attendence </Link> </li>
         <li> <Link to="/group"> Group </Link> </li>
       </ul>
+      <button className = "login-button"> Login </button>
     </nav>
   )
 }
