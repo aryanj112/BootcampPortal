@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/logo.png";
 import './NavBar.css';
@@ -49,10 +49,10 @@ function LoginModel({ onClose }: LoginModalProps) {
     <div className="modal-overlay">
       <div className="modal-box">
         <h2>Select a Name</h2>
-        <button onClick={() => handleOptionClick('Alice')}>Alice</button>
-        <button onClick={() => handleOptionClick('Bob')}>Bob</button>
-        <button onClick={() => handleOptionClick('Charlie')}>Charlie</button>
-        <button onClick={() => handleOptionClick('David')}>David</button>
+        <button onClick={() => handleOptionClick('Aryan')}>Aryan</button>
+        <button onClick={() => handleOptionClick('Aditi')}>Aditi</button>
+        <button onClick={() => handleOptionClick('Kimber')}>Kimber</button>
+        <button onClick={() => handleOptionClick('Gavin')}>Gavin</button>
         <button onClick={onClose}>Close</button>
         {selectedName && <p>You selected: {selectedName}</p>}
       </div>
