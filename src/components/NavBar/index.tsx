@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from "../../assets/logo.png";
 import './NavBar.css';
 import './LoginModule.css';
-
-let globalName = '';  // Global variable to store the selected name
+import { setGlobalName, getGlobalName } from '../../globalState';  // Import functions from the global state
 
 function NavBar() {
 
@@ -39,10 +38,10 @@ function LoginModel({ onClose }: LoginModalProps) {
   const [selectedName, setSelectedName] = useState('');
 
   const handleOptionClick = (name: string) => {
-    globalName = name; // Set the global variable to the clicked name
-    setSelectedName(name); // Update local state for UI display
-    onClose(); // Close the modal
-    console.log('Global name set to:', globalName);
+    setGlobalName(name);  // Update the global variable
+    setSelectedName(name);  // Update local state to reflect the change
+    onClose();  // Close the modal
+    console.log('Global name set to:', getGlobalName());  // Use getGlobalName to fetch the updated value
   };
 
   return (
