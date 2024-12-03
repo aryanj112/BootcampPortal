@@ -20,7 +20,7 @@ function NavBar() {
       <ul>
         <li><Link to="/lectures">LECTURES</Link></li>
         <li><Link to="/homework">HOMEWORK</Link></li>
-        <li><a href='https:/google.com'>ATTENDENCE</a></li>
+        <li><a href='https://docs.google.com/spreadsheets/d/1uJUiw6YPPcxL2-qmerc_azm4oTSWo3vWJGd2ofXEPuY/edit?usp=sharing'>ATTENDENCE</a></li>
         <li><Link to="/group">GROUP</Link></li>
       </ul>
       <button onClick={handleLoginClick} className="login-button">

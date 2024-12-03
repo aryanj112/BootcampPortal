@@ -1,0 +1,52 @@
+.lecture-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Varta", sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    gap: 10px;
+    width: 40%;
+}
+
+.lecture-content p {
+    font-size: 15px;
+    color: #35579a;
+}
+
+.lectureLinks{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    white-space: noWrap;
+    font-size: 20px;
+}
+
+.lecture-link {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lecture-link:hover {
+    text-decoration: underline;
+}
+
+.lecture-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.lecture-heading {
+    font-family: "Urbanist", sans-serif;
+    font-size: 3rem;
+    padding: 30px;
+    text-align: center;
+}
