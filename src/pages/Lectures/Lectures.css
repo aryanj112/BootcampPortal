@@ -56,11 +56,11 @@
 }
 
 .password-text {
-    color: white; 
+    color: #f9f9f9; 
     transition: color 0.3s;
   }
   
-  .password-text:hover {
+.password-text:hover {
     color: #35579a; 
   }  
 
