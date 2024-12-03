@@ -6,7 +6,6 @@
  body {
     min-width: 300px;
     min-block-size: 100vb;
-    /* background-image: linear-gradient(to left bottom, hsl(226, 77%, 48%), hsl(224, 70%, 40%), hsl(223, 39%, 11%)); */
     background-color: #35579a;
     color: white;
  }
@@ -60,7 +59,6 @@
     display:flex;
     justify-content: column;
     color: #35579a;
-    /* border: 3px solid #2F1847;  */
  
  
  }
@@ -68,7 +66,6 @@
  
  .annoucement img {
     display: flex;
-    /* border-radius: 5px; */
     border: 0.2rem solid black;
     width: 8rem;
     height: auto;
@@ -99,20 +96,3 @@
     height: 30rem;
     border: 2px solid white;
  }
- /*
- @media screen and (max-width: 940px){
-    .nav {
-        flex-direction: column;
-        gap: .25rem;
-        padding-bottom: 1rem;
-    }
- 
- 
-    .nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
- 
- 
- } */
- 

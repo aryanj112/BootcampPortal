@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import logo from "../../assets/logo.png";
 import './NavBar.css';
 import './LoginModel.css';
-import { useGlobalName } from '../../globalContext';  // Import the custom hook
+import { useGlobalName } from '../../globalContext';  
 
 function NavBar() {
   const [isModelOpen, setIsModelOpen] = useState(false);
-  // const { globalName, setGlobalName } = useGlobalName(); // Access the globalName and setGlobalName
 
   const handleLoginClick = () => setIsModelOpen(true);
   const handleCloseModel = () => setIsModelOpen(false);
@@ -28,7 +27,6 @@ function NavBar() {
       <button onClick={handleLoginClick} className="login-button">
         LOGIN
       </button>
-      {/* <div>{globalName && <span>Logged in as: {globalName}</span>}</div> */}
       {isModelOpen && <LoginModel onClose={handleCloseModel} />}
     </nav>
   );
@@ -39,13 +37,13 @@ interface LoginModalProps {
 }
 
 function LoginModel({ onClose }: LoginModalProps) {
-  const { setGlobalName } = useGlobalName(); // Access the function to set global name
+  const { setGlobalName } = useGlobalName(); 
   const [selectedName, setSelectedName] = useState('');
 
   const handleOptionClick = (name: string) => {
-    setGlobalName(name);  // Update the global variable
-    setSelectedName(name);  // Update local state to reflect the change
-    onClose();  // Close the modal
+    setGlobalName(name); 
+    setSelectedName(name); 
+    onClose(); 
     console.log('Global name set to:', name);
   };
 

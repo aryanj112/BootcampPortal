@@ -5,7 +5,7 @@ import './Home.css';
 import { useGlobalName } from '../../globalContext';
 
 function Home() {
-  const { globalName } = useGlobalName();  // Get the global name
+  const { globalName } = useGlobalName(); 
 
   return (
     <div className="footerAddition">
