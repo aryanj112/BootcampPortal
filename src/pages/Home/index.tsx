@@ -4,29 +4,18 @@ import './Home.css';
 import { fetchAnnouncements, AnnouncementType } from '../../api';
 import { useGlobalName } from '../../globalContext';
 
-const Home: React.FC = () => {
+function Home() {
   const [announcements, setAnnouncements] = useState<AnnouncementType[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-
-  const { globalName } = useGlobalName(); // Using the globalName from context
+  const { globalName } = useGlobalName();
 
   useEffect(() => {
     const getAnnouncements = async () => {
-      try {
-        const data = await fetchAnnouncements(); // Fetch announcements from the API
-        setAnnouncements(data);
-      } catch (err) {
-        setError((err as Error).message);
-      } finally {
-        setLoading(false);
-      }
+      const data = await fetchAnnouncements();
+      setAnnouncements(data);
     };
+
     getAnnouncements();
   }, []);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
 
   return (
     <div className="footerAddition">
@@ -57,11 +46,7 @@ type AnnouncementProps = {
   description: string;
 };
 
-const Announcement: React.FC<AnnouncementProps> = ({
-  user_name,
-  tag,
-  description,
-}) => {
+function Announcement ( {id, user_name, tag, description}: AnnouncementProps) {
   return (
     <div className="announcement">
       <div className="announcement-header">

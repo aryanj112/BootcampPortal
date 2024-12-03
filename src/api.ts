@@ -22,7 +22,6 @@ export const fetchAnnouncements = async (): Promise<AnnouncementType[]> => {
   }
 };
 
-
 export const fetchUserImg = async (name: string): Promise<string> => {
     const response = await fetch(`${BASE_URL}/links?name=${name}`);
     return response.text();
