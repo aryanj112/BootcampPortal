@@ -33,13 +33,17 @@
  
  .homework-description {
     flex: 0 0 50%;
+    font-size: 1.5rem;
     white-space: normal;
     word-wrap: break-word;
     word-break: break-word;
     overflow-wrap: break-word;
  }
  
- 
+ .description-header{
+   font-size: 2rem;
+ }
+
  .homework-text {
     flex: 0 0 20%;
     white-space: normal;
@@ -96,7 +100,17 @@
     color: blue;
  }
  
+ .homework-name{
+   font-size: 3rem;
+ }
  
+ .due-date{
+   font-size: 2rem;
+ }
+
+ .header-links{
+   font-size: 1.75rem;
+ }
  .homework-images a {
     display: inline-block;
     width: 100%;
@@ -117,6 +131,7 @@
  
  
  .homework-heading{
+   
    font-family: "Urbanist", sans-serif;
     font-style: normal;
     font-weight: 50;

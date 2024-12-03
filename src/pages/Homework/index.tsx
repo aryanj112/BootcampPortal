@@ -47,14 +47,15 @@ const HomeworkCard: React.FC<{ homework: typeof homeworkData[0] }> = ({ homework
   <div className="homework-card">
     <div className="homework-content">
       <div className="homework-text">
-        <h2>{homework.name}</h2>
-        <p>Due Date: {homework.dueDate}<br />(11:59 PM)</p>
+        <h2 className = "homework-name">{homework.name}</h2>
+        <p className = "due-date">Due Date: {homework.dueDate}<br />(11:59 PM)</p>
+        <br />
         {homework.githubLink !== "" && (
-          <a
+          <a 
             href={homework.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="homework-link"
+            className="homework-link header-links"
           >
             GitHub Repository<br /><br />
           </a>
@@ -63,14 +64,14 @@ const HomeworkCard: React.FC<{ homework: typeof homeworkData[0] }> = ({ homework
           href={homework.submissionPortal}
           target="_blank"
           rel="noopener noreferrer"
-          className="homework-link"
+          className="homework-link header-links"
         >
           Submission Portal
         </a>
       </div>
       <div className="homework-description">
         <p>
-          <b>Description:</b>
+          <b className="description-header">Description:</b>
           <br /> <br /> {transformDescription(homework.description)}
         </p>
       </div>
