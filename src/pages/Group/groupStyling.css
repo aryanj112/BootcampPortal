@@ -1,10 +1,15 @@
+
 .group-heading, .section-heading {
     display: flex;
     justify-content: center;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 1rem;
 }
 
 .group-heading{
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .profile-list-container {
@@ -18,6 +23,9 @@
 }
 
 .profile-card {
+    font-family: "Varta", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     background: #f9f9f9;
     padding: 16px;
     padding-left: 4%;
@@ -54,11 +62,9 @@
 }
 
 .profile-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    border: 0.2rem solid black;
+    width: 10rem;
+    height: auto;
 }
 
 .profile-links {
@@ -70,9 +76,10 @@
 }
 
 .profile-link {
-    color: red;
+    color: blue;
     text-decoration: none;
     font-weight: bold;
+    font-size: 2rem;
     transition: color 0.3s ease;
 }
 
@@ -87,7 +94,8 @@
 
 .profile-name {
     margin-top: 12px;
-    color: blue;
+    font-size: 2.75rem;
+    color: #35579a;
     width: 150px;
 }
 
