@@ -20,7 +20,7 @@ function Group() {
         setMentors(fetchedMentors); // Only update if the response is not empty
       }
     };
-
+  
     // Fetch Mentees
     const fetchMenteeData = async () => {
       const fetchedMentees = await fetchMentees(globalName); // Replace with dynamic name
@@ -28,7 +28,7 @@ function Group() {
         setMentees(fetchedMentees); // Only update if the response is not empty
       }
     };
-
+  
     // Fetch Teammates
     const fetchTeammateData = async () => {
       const fetchedTeammates = await fetchTeammates(globalName); // Replace with dynamic name
@@ -36,11 +36,13 @@ function Group() {
         setTeammates(fetchedTeammates); // Only update if the response is not empty
       }
     };
-
-    fetchMentorData();
-    fetchMenteeData();
-    fetchTeammateData();
-  }, []);
+  
+    if (globalName) {
+      fetchMentorData();
+      fetchMenteeData();
+      fetchTeammateData();
+    }
+  }, [globalName]);  // Add globalName to the dependency array
 
   return (
     <>
