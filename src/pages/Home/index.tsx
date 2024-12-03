@@ -64,10 +64,11 @@ function Announcement({ id, user_name, tag, description }: AnnouncementProps) {
 
   return (
     <div className="announcement">
+      <img className = "announcement_img" src={userLinks?.img_url} alt={useGlobalName() + "'s image"} />
       <div className="announcement-header">
         <h3>{`${user_name} ${tag}`}</h3>
+        <h4>{description}</h4>
       </div>
-      <h4>{description}</h4>
     </div>
   );
 };

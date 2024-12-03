@@ -53,18 +53,15 @@
    width: 50%;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
    color: #35579a;
+   display: flex;
+   justify-content: space-around;
  }
 
-
-.annoucement img {
-   display: flex;
-   /* border-radius: 5px; */
-   border: 0.2rem solid black;
-   width: 8rem;
+ .announcement_img {
+   width: 10rem;
    height: auto;
-  
-}
-
+   border: .2rem solid black;
+ }
 
 .announcement-header{
    /* color: #35579a; */
@@ -76,7 +73,7 @@
 
 
 .announcement-header h3{
-   padding-top: 2rem;
+   padding-top: 1rem;
    font-size: 1.2rem;
 }
 .announcements-container h4{
