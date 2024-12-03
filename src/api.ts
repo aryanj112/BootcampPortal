@@ -9,6 +9,8 @@ export interface AnnouncementType {
   description: string;
 }
 
+
+
 export const fetchAnnouncements = async (): Promise<AnnouncementType[]> => {
   try {
     const response = await fetch(`${BASE_URL}/announcements`);
@@ -30,6 +32,8 @@ export interface UserLinksType {
     resume_url?: string;  // Optional field
 }
 
+
+
 export const fetchUserLinks = async (name: string): Promise<UserLinksType> => {
     const response = await fetch(`${BASE_URL}/links?name=${name}`);
     
@@ -40,8 +44,23 @@ export const fetchUserLinks = async (name: string): Promise<UserLinksType> => {
     return response.json(); // Parse and return the JSON response
 };
 
+
+// Define the interface for a User (can be reused for mentors, mentees, etc.)
+export interface User {
+    id: number;
+    role: string;
+    linkdinURL: string;
+    websiteURL: string | null;
+    teacher_id: number | null;
+    name: string;
+    password: string;  // Sensitive field, make sure to handle securely
+    imgURL: string;
+    githubURL: string;
+    resumeURL: string | null;  // URL can be null
+  }
+
 // Function to fetch mentors
-export const fetchMentors = async (name: string): Promise<string[]> => {
+export const fetchMentors = async (name: string): Promise<User[]> => {
     try {
       const response = await fetch(`${BASE_URL}/mentors?name=${name}`);
       if (!response.ok) {
@@ -55,7 +74,7 @@ export const fetchMentors = async (name: string): Promise<string[]> => {
   };
   
   // Function to fetch mentees
-  export const fetchMentees = async (name: string): Promise<string[]> => {
+  export const fetchMentees = async (name: string): Promise<User[]> => {
     try {
       const response = await fetch(`${BASE_URL}/mentees?name=${name}`);
       if (!response.ok) {
@@ -68,36 +87,8 @@ export const fetchMentors = async (name: string): Promise<string[]> => {
     }
   };
   
-  // Function to fetch students
-  export const fetchStudents = async (name: string): Promise<string[]> => {
-    try {
-      const response = await fetch(`${BASE_URL}/students?name=${name}`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return await response.json(); // Assuming the response is an array of student names
-    } catch (error) {
-      console.error("Failed to fetch students:", error);
-      throw error;
-    }
-  };
-  
-  // Function to fetch teacher
-  export const fetchTeacher = async (name: string): Promise<string> => {
-    try {
-      const response = await fetch(`${BASE_URL}/teacher?name=${name}`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return await response.json(); // Assuming the response is a single string (the teacher's name)
-    } catch (error) {
-      console.error("Failed to fetch teacher:", error);
-      throw error;
-    }
-  };
-  
   // Function to fetch teammates
-  export const fetchTeammates = async (name: string): Promise<string[]> => {
+  export const fetchTeammates = async (name: string): Promise<User[]> => {
     try {
       const response = await fetch(`${BASE_URL}/teammates?name=${name}`);
       if (!response.ok) {

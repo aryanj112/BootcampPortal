@@ -53,7 +53,7 @@ function LoginModel({ onClose }: LoginModalProps) {
         <h2>Select a Name</h2>
         <button onClick={() => handleOptionClick('Aryan')}>Aryan</button>
         <button onClick={() => handleOptionClick('Aditi')}>Aditi</button>
-        <button onClick={() => handleOptionClick('Kimber')}>Kimber</button>
+        <button onClick={() => handleOptionClick('Nitish')}>Nitish</button>
         <button onClick={() => handleOptionClick('Gavin')}>Gavin</button>
         <button onClick={onClose}>Close</button>
         {selectedName && <p>You selected: {selectedName}</p>}

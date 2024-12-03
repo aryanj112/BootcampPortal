@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './groupStyling.css';
 import "../../components/NavBar/footer.css";
-import { fetchMentors, fetchMentees, fetchStudents, fetchTeacher, fetchTeammates, fetchUserLinks } from '../../api';
+import { fetchMentors, fetchMentees, fetchTeammates, fetchUserLinks } from '../../api';
 
 
 function Group() {
 
   const [mentors, setMentors] = useState<any[]>([]); // Mentors data from the API
   const [mentees, setMentees] = useState<any[]>([]); // Mentees data from the API
-  const [students, setStudents] = useState<any[]>([]); // Students data from the API
   const [teammates, setTeammates] = useState<any[]>([]); // Teammates data from the API
-  const [teacher, setTeacher] = useState<string | null>(null);
 
   useEffect(() => {
     // Fetch Mentors
@@ -29,14 +27,6 @@ function Group() {
       }
     };
 
-    // Fetch Students
-    const fetchStudentData = async () => {
-      const fetchedStudents = await fetchStudents('your-name'); // Replace with dynamic name
-      if (fetchedStudents.length > 0) {
-        setStudents(fetchedStudents); // Only update if the response is not empty
-      }
-    };
-
     // Fetch Teammates
     const fetchTeammateData = async () => {
       const fetchedTeammates = await fetchTeammates('your-name'); // Replace with dynamic name
@@ -45,18 +35,9 @@ function Group() {
       }
     };
 
-    const fetchTeacherData = async () => {
-      const fetchedTeacher = await fetchTeacher('your-name'); // Replace 'your-name' with a dynamic value
-      if (fetchedTeacher) {
-        setTeacher(fetchedTeacher); // Only update if the response is not empty
-      }
-    };
-    
     fetchMentorData();
     fetchMenteeData();
-    fetchStudentData();
     fetchTeammateData();
-    fetchTeacherData();
   }, []);
 
   return (
@@ -79,21 +60,6 @@ function Group() {
             <ProfileList names={mentees} />
           </>
         )}
-
-        {students.length > 0 && (
-          <>
-            <h1 className="section-heading">Students</h1>
-            <ProfileList names={students} />
-          </>
-        )}
-
-        {teammates.length > 0 && (
-          <>
-            <h1 className="section-heading">Teammates</h1>
-            <ProfileList names={teammates} />
-          </>
-        )}
-
 
         <div className="footer">
           <div className="footer-section">
