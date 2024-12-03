@@ -1,7 +1,7 @@
 // @ts-ignore
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import { fetchAnnouncements, AnnouncementType } from '../../api';
+import { fetchAnnouncements, AnnouncementType, fetchUserLinks, UserLinksType } from '../../api';
 import { useGlobalName } from '../../globalContext';
 
 function Home() {
@@ -46,7 +46,22 @@ type AnnouncementProps = {
   description: string;
 };
 
-function Announcement ( {id, user_name, tag, description}: AnnouncementProps) {
+function Announcement({ id, user_name, tag, description }: AnnouncementProps) {
+  const [userLinks, setUserLinks] = useState<UserLinksType | null>(null); // Initialize with null
+
+  useEffect(() => {
+    const getUserLinks = async () => {
+      try {
+        const links = await fetchUserLinks(user_name); // Call the API with `user_name`
+        setUserLinks(links); // Update state with the fetched links
+      } catch (error) {
+        console.error('Failed to fetch user links:', error);
+      }
+    };
+
+    getUserLinks(); // Invoke the function inside `useEffect`
+  }, [user_name]); // Add `user_name` to the dependency array to re-fetch when it changes
+
   return (
     <div className="announcement">
       <div className="announcement-header">
