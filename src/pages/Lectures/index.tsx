@@ -33,7 +33,7 @@ const LectureCard: React.FC<{ lecture: typeof lectureData[0] }> = ({ lecture }) 
     <div className="lecture-content">
       <div className="date-password">
         <p><b>Date:</b> {lecture.date}</p>
-        <p><b>Password:</b> {lecture.password}</p>
+        <p><b>Password:</b> <span className="password-text">{lecture.password}</span></p>
       </div>
       <br />
       <div className="lectureLinks">

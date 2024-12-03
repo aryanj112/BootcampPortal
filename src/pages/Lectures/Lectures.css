@@ -55,6 +55,15 @@
     gap: 20px;
 }
 
+.password-text {
+    color: white; 
+    transition: color 0.3s;
+  }
+  
+  .password-text:hover {
+    color: #35579a; 
+  }  
+
 .date-password p {
     margin: 0;
 }
