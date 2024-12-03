@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './groupStyling.css';
 import "../../components/NavBar/footer.css";
 import { fetchMentors, fetchMentees, fetchTeammates, fetchUserLinks } from '../../api';
+import { useGlobalName } from '../../globalContext';
 
 
 function Group() {
 
+  const { globalName } =  useGlobalName();
   const [mentors, setMentors] = useState<any[]>([]); // Mentors data from the API
   const [mentees, setMentees] = useState<any[]>([]); // Mentees data from the API
   const [teammates, setTeammates] = useState<any[]>([]); // Teammates data from the API
@@ -13,7 +15,7 @@ function Group() {
   useEffect(() => {
     // Fetch Mentors
     const fetchMentorData = async () => {
-      const fetchedMentors = await fetchMentors('your-name'); // Replace with dynamic name
+      const fetchedMentors = await fetchMentors(globalName); // Replace with dynamic name
       if (fetchedMentors.length > 0) {
         setMentors(fetchedMentors); // Only update if the response is not empty
       }
@@ -21,7 +23,7 @@ function Group() {
 
     // Fetch Mentees
     const fetchMenteeData = async () => {
-      const fetchedMentees = await fetchMentees('your-name'); // Replace with dynamic name
+      const fetchedMentees = await fetchMentees(globalName); // Replace with dynamic name
       if (fetchedMentees.length > 0) {
         setMentees(fetchedMentees); // Only update if the response is not empty
       }
@@ -29,7 +31,7 @@ function Group() {
 
     // Fetch Teammates
     const fetchTeammateData = async () => {
-      const fetchedTeammates = await fetchTeammates('your-name'); // Replace with dynamic name
+      const fetchedTeammates = await fetchTeammates(globalName); // Replace with dynamic name
       if (fetchedTeammates.length > 0) {
         setTeammates(fetchedTeammates); // Only update if the response is not empty
       }

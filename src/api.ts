@@ -51,7 +51,6 @@ export interface User {
     role: string;
     linkdinURL: string;
     websiteURL: string | null;
-    teacher_id: number | null;
     name: string;
     password: string;  // Sensitive field, make sure to handle securely
     imgURL: string;
@@ -66,6 +65,7 @@ export const fetchMentors = async (name: string): Promise<User[]> => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
+      console.log(response.json())
       return await response.json(); // Assuming the response is an array of mentor names
     } catch (error) {
       console.error("Failed to fetch mentors:", error);
