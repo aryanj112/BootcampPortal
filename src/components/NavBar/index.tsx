@@ -24,9 +24,9 @@ function NavBar() {
         <li><Link to="/group">GROUP</Link></li>
       </ul>
       <button onClick={handleLoginClick} className="login-button">
-        Login
+        LOGIN
       </button>
-      <div>{globalName && <span>Logged in as: {globalName}</span>}</div>
+      {/* <div>{globalName && <span>Logged in as: {globalName}</span>}</div> */}
       {isModelOpen && <LoginModel onClose={handleCloseModel} />}
     </nav>
   );
@@ -55,7 +55,7 @@ function LoginModel({ onClose }: LoginModalProps) {
         <button onClick={() => handleOptionClick('Aditi')}>Aditi</button>
         <button onClick={() => handleOptionClick('Kimber')}>Kimber</button>
         <button onClick={() => handleOptionClick('Gavin')}>Gavin</button>
-        <button onClick={onClose}>Close</button>
+        <button className = "close"onClick={onClose}>Close</button>
         {selectedName && <p>You selected: {selectedName}</p>}
       </div>
     </div>

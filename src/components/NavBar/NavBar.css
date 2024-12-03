@@ -70,6 +70,17 @@
     }
  }
  
+ .login-button{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #35579a;
+    color: white;
+    border: 2px solid white;
+    border-radius: .5rem;
+ }
+
+ 
 /* 
 .nav {
     margin: 2rem;
