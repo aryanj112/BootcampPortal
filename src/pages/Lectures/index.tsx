@@ -31,7 +31,10 @@ function Lectures() {
 const LectureCard: React.FC<{ lecture: typeof lectureData[0] }> = ({ lecture }) => (
   <div className="lecture-card">
     <div className="lecture-content">
-      <p><b>Date:</b> {lecture.date}</p>
+      <div className="date-password">
+        <p><b>Date:</b> {lecture.date}</p>
+        <p><b>Password:</b> {lecture.password}</p>
+      </div>
       <br />
       <div className="lectureLinks">
         <a href={lecture.zoomLink} target="_blank" rel="noopener noreferrer" className="lecture-link">

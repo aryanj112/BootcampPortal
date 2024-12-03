@@ -14,11 +14,6 @@
     width: 40%;
 }
 
-.lecture-content p {
-    font-size: 15px;
-    color: #35579a;
-}
-
 .lectureLinks{
     display: flex;
     justify-content: center;
@@ -49,4 +44,17 @@
     font-size: 3rem;
     padding: 30px;
     text-align: center;
+}
+
+.date-password {
+    font-size: 15px;
+    color: #35579a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.date-password p {
+    margin: 0;
 }
